@@ -1,14 +1,14 @@
 {% set python_min = "3.10" %}
 {% set name = "txl-console" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/txl_console-{{ version }}.tar.gz
-  sha256: e977532ca25fb3eb454aa733c25b5b0d3b1c33437042647b6d2b7698ccf34bd9
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/txl_console-{{ version }}.tar.gz
+  sha256: 9833ebdf9fbb8f39a9ef9c42b73028d2f4b195571fdf99cd1aee47cdd9f1da26
 
 build:
   noarch: python
